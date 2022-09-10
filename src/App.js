@@ -19,7 +19,8 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
-            <Route path="users">
+            {/* <Route path="" element={}/> */}
+            <Route path="allaccounts">
               <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />
               <Route
