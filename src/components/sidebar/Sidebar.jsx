@@ -41,7 +41,7 @@ const Sidebar = () => {
           </Link>
          
           <p className="title">DEPOSITS</p>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          <Link to="/drawaltable" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
               <span>All deposits</span>

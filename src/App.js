@@ -1,6 +1,9 @@
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import List from "./pages/list/List";
+import Drawaltable from "./pages/list/Drawaltable";
+import Active from "./pages/list/Active";
+import Deactivated from "./pages/list/Deactivated";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,7 +22,8 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
-            {/* <Route path="" element={}/> */}
+            <Route path="Active" element={<Active />}/>
+            <Route path="Deactivated" element={<Deactivated />}/>
             <Route path="allaccounts">
               <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />
@@ -28,8 +32,8 @@ function App() {
                 element={<New inputs={userInputs} title="Add New User" />}
               />
             </Route>
-            <Route path="products">
-              <Route index element={<List />} />
+            <Route path="drawaltable">
+              <Route index element={<Drawaltable />} />
               <Route path=":productId" element={<Single />} />
               <Route
                 path="new"
