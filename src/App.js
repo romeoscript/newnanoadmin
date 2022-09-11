@@ -2,6 +2,9 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Drawaltable from "./pages/list/Drawaltable";
+import Completed from "./pages/list/Completed";
+import ActiveDeps from "./pages/list/ActiveDeps";
+import PendingDeps from "./pages/list/PendingDeps";
 import Active from "./pages/list/Active";
 import Deactivated from "./pages/list/Deactivated";
 import Single from "./pages/single/Single";
@@ -24,6 +27,9 @@ function App() {
             <Route path="login" element={<Login />} />
             <Route path="Active" element={<Active />}/>
             <Route path="Deactivated" element={<Deactivated />}/>
+            <Route path="ActiveDeps" element={<ActiveDeps />}/>
+            <Route path="Completed" element={<Completed />}/>
+            <Route path="PendingDeps" element={<PendingDeps />}/>
             <Route path="allaccounts">
               <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />

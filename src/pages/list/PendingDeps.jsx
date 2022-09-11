@@ -10,7 +10,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-const Drawaltable = () => {
+const PendingDeps = () => {
     const rows = [
         {
           id: 1,
@@ -104,4 +104,4 @@ const Drawaltable = () => {
   )
 }
 
-export default Drawaltable
+export default PendingDeps
