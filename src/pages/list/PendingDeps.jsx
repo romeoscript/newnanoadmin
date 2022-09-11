@@ -20,7 +20,7 @@ const PendingDeps = () => {
           date: "1 March",
           amount: 785,
           method: "Cash on Delivery",
-          status: "Approved",
+          status: "Pending",
         },
         {
           id: 2,
@@ -50,7 +50,7 @@ const PendingDeps = () => {
           date: "1 March",
           amount: 920,
           method: "Online",
-          status: "Approved",
+          status: "Pending",
         },
         {
           id: 5,
@@ -68,7 +68,7 @@ const PendingDeps = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
-        <h2 style={{textAlign:'center'}}>ALL DEPOSITS</h2>
+        <h2 style={{textAlign:'center'}}>PENDING DEPOSITS</h2>
         <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>

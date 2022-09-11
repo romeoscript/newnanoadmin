@@ -47,19 +47,24 @@ const Sidebar = () => {
               <span>All deposits</span>
             </li>
           </Link>
+          <Link to="/ActiveDeps" style={{ textDecoration: "none" }}>
           <li>
             <CreditCardIcon className="icon" />
             <span>Active deposits</span>
           </li>
+          </Link>
+          <Link to="/Completed" style={{ textDecoration: "none" }}>
           <li>
             <LocalShippingIcon className="icon" />
             <span>Completed deposits</span>
           </li>
+          </Link>
+          <Link to="/PendingDeps" style={{ textDecoration: "none" }}>
           <li>
             <InsertChartIcon className="icon" />
             <span>Pending deposits</span>
           </li>
-          
+          </Link>
           <p className="title">WITHDRAWAL</p>
           <li>
             <NotificationsNoneIcon className="icon" />

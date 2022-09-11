@@ -20,7 +20,7 @@ const ActiveDeps = () => {
           date: "1 March",
           amount: 785,
           method: "Cash on Delivery",
-          status: "Approved",
+          status: "Verified",
         },
         {
           id: 2,
@@ -30,7 +30,7 @@ const ActiveDeps = () => {
           date: "1 March",
           amount: 900,
           method: "Online Payment",
-          status: "Pending",
+          status: "Verified",
         },
         {
           id: 3,
@@ -40,7 +40,7 @@ const ActiveDeps = () => {
           date: "1 March",
           amount: 35,
           method: "Cash on Delivery",
-          status: "Pending",
+          status: "Verified",
         },
         {
           id: 4,
@@ -50,7 +50,7 @@ const ActiveDeps = () => {
           date: "1 March",
           amount: 920,
           method: "Online",
-          status: "Approved",
+          status: "Verified",
         },
         {
           id: 5,
@@ -60,7 +60,7 @@ const ActiveDeps = () => {
           date: "1 March",
           amount: 2000,
           method: "Online",
-          status: "Pending",
+          status: "Verified",
         },
       ];
   return (
@@ -68,7 +68,7 @@ const ActiveDeps = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
-        <h2 style={{textAlign:'center'}}>ALL DEPOSITS</h2>
+        <h2 style={{textAlign:'center'}}>ACTIVE DEPOSITS</h2>
         <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>

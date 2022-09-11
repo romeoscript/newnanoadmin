@@ -30,7 +30,7 @@ const Completed = () => {
           date: "1 March",
           amount: 900,
           method: "Online Payment",
-          status: "Pending",
+          status: "Approved",
         },
         {
           id: 3,
@@ -40,7 +40,7 @@ const Completed = () => {
           date: "1 March",
           amount: 35,
           method: "Cash on Delivery",
-          status: "Pending",
+          status: "Approved",
         },
         {
           id: 4,
@@ -60,7 +60,7 @@ const Completed = () => {
           date: "1 March",
           amount: 2000,
           method: "Online",
-          status: "Pending",
+          status: "Approved",
         },
       ];
   return (
@@ -68,7 +68,7 @@ const Completed = () => {
       <Sidebar/>
       <div className="listContainer">
         <Navbar/>
-        <h2 style={{textAlign:'center'}}>ALL DEPOSITS</h2>
+        <h2 style={{textAlign:'center'}}>COMPLETED DEPOSITS</h2>
         <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
