@@ -66,10 +66,12 @@ const Sidebar = () => {
           </li>
           </Link>
           <p className="title">WITHDRAWAL</p>
+          <Link to="/AllWidthdrawal" style={{ textDecoration: "none" }}>
           <li>
             <NotificationsNoneIcon className="icon" />
             <span>All widthdrawal</span>
           </li>
+          </Link>
           <p className="title">TRANSACTIONS</p>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />

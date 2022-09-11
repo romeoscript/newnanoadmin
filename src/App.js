@@ -3,6 +3,9 @@ import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Drawaltable from "./pages/list/Drawaltable";
 import Completed from "./pages/list/Completed";
+import Allwidthdrawal from "./pages/list/widthdrawal/ALLwidthdrawal";
+import Completedwidthdrawal from "./pages/list/widthdrawal/Completedwidthdrawal";
+import Pendingwidthdrawal from "./pages/list/widthdrawal/Pendingwidthdrawal";
 import ActiveDeps from "./pages/list/ActiveDeps";
 import PendingDeps from "./pages/list/PendingDeps";
 import Active from "./pages/list/Active";
@@ -30,6 +33,9 @@ function App() {
             <Route path="ActiveDeps" element={<ActiveDeps />}/>
             <Route path="Completed" element={<Completed />}/>
             <Route path="PendingDeps" element={<PendingDeps />}/>
+            <Route path="Allwidthdrawal" element={<Allwidthdrawal />}/>
+            <Route path="Completedwidthdrawal" element={<Completedwidthdrawal />}/>
+            <Route path="Pendingwidthdrawal" element={<Pendingwidthdrawal />}/>
             <Route path="allaccounts">
               <Route index element={<List />} />
               <Route path=":userId" element={<Single />} />
